@@ -9,29 +9,12 @@ cd vehicle-sales-prediction
 pip install -r requirements.txt
 ```
 
-## 🚀 Usage
-1. **Data Preparation**:
-   ```bash
-   python src/preprocess.py --input data/raw/car_purchasing.csv --output data/processed/
-   ```
-
-2. **Model Training**:
-   ```bash
-   python src/train.py --data data/processed/processed_data.csv --model models/best_model.pkl
-   ```
-
-3. **Prediction**:
-   ```bash
-   python src/predict.py --model models/best_model.pkl --input new_data.csv
-   ```
-
 ## 📊 Results
 | Model          | MAE   | RMSE  | R² Score |
 |----------------|-------|-------|----------|
 | Linear Regression | 2500 | 3200  | 0.82     |
 | XGBoost        | 1800  | 2400  | 0.89     |
 
-![Feature Importance](reports/figures/feature_importance.png)
 
 ## 📝 Methodology
 1. **Data Preprocessing**:
